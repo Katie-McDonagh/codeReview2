@@ -1,3 +1,3 @@
-function soundWaveFilter () {
-  
+function soundWaveFilter (soundWaves) {
+  return soundWaves
 }
