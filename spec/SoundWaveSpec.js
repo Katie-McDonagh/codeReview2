@@ -31,4 +31,8 @@ describe ("soundWaveFilter", function (){
   it ("returns multiple soundwaves when only one has breached the upper limit", function () {
     expect(soundWaveFilter([20, 31], 10, 30)).toEqual([20, 30])
   })
+
+  it ("returns multiple soundwaves when they breach upper and lower limits", function (){
+    expect(soundWaveFilter([9, 20, 31], 10, 30)).toEqual([10, 20, 30])
+  })
 });
