@@ -6,6 +6,7 @@ function soundWaveFilter(soundWave, lowerLimit, upperLimit){
     result.push(upperLimit)
   } else {
   result.push(soundWave[0])
+  result.push(soundWave[1])
   }
   return result
 };
