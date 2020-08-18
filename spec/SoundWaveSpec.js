@@ -44,4 +44,8 @@ describe ("soundWaveFilter", function (){
     expect(soundWaveFilter([2000], 30)).toEqual([1000])
   })
 
+  it("should provide a default lowerLimit of 40 if none is provided", function (){
+    expect(soundWaveFilter([9], NaN, 30)).toEqual([40])
+  })
+
   });
