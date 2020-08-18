@@ -5,8 +5,10 @@ function soundWaveFilter(soundWave, lowerLimit, upperLimit){
   }else if(soundWave > upperLimit) {
     result.push(upperLimit)
   } else {
-  result.push(soundWave[0])
-  result.push(soundWave[1])
+    soundWave.forEach(myFunction);
+    function myFunction(frequency){
+      result.push(frequency)
+    }
   }
   return result
 };
