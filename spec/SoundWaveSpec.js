@@ -20,7 +20,7 @@ describe ("soundWaveFilter", function (){
     expect(soundWaveFilter([9, 9], 10, 30)).toEqual ([10, 10])
   })
 
-  it ("returns multiple soundwaves modified when the upper limit is breached", function (){
-    expect(soundWaveFilter([31, 31], 10, 30)).toEqual ([30, 30])
+  it ("returns multiple soundwaves modified when the upper limit is breached multiple times", function (){
+    expect(soundWaveFilter([31, 31, 38, 45], 10, 30)).toEqual ([30, 30, 30, 30])
   })
 });
