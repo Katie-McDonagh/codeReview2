@@ -25,6 +25,6 @@ describe ("soundWaveFilter", function (){
   })
 
   it ("returns multiple soundwaves modified when only one has breached the lower limit", function (){
-    expect(soundWaveFilter([20, 9], 10, 30)).toEqual([20, 9])
+    expect(soundWaveFilter([20, 9], 10, 30)).toEqual([20, 10])
   })
 });
