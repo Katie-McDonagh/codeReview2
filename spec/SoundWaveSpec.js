@@ -35,9 +35,13 @@ describe ("soundWaveFilter", function (){
   it ("returns multiple soundwaves when they breach upper and lower limits", function (){
     expect(soundWaveFilter([9, 20, 31], 10, 30)).toEqual([10, 20, 30])
   })
-  
-  it('should throw an error on invalid parameter', function(){
+
+  xit('should throw an error if the soundWave is empty', function(){
     expect(function() { soundWaveFilter([], 10, 30); }).toThrow("No soundWave provided");
 });
+
+  it("should provide a default lowerLimit of 40 if none is provided", function (){
+    expect(soundWaveFilter([9], null, 30)).toEqual([40])
+  })
 
   });
