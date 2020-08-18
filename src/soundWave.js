@@ -1,6 +1,6 @@
 function soundWaveFilter(soundWave, lowerLimit, upperLimit){
   let result = []
-  if(soundWave < lowerLimit){
+  if(soundWave.includes(lowerLimit - 1)){
     result.push(lowerLimit)
   }else if(soundWave > upperLimit) {
     result.push(upperLimit)
