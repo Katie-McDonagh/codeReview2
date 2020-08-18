@@ -40,8 +40,8 @@ describe ("soundWaveFilter", function (){
     expect(function() { soundWaveFilter([], 10, 30); }).toThrow("No soundWave provided");
 });
 
-  it("should provide a default lowerLimit of 40 if none is provided", function (){
-    expect(soundWaveFilter([9], null, 30)).toEqual([40])
+  it("should provide a default upperLimit of 10000 if none is provided", function (){
+    expect(soundWaveFilter([20000], 30)).toEqual([10000])
   })
 
   });
