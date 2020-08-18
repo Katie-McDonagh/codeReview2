@@ -1,4 +1,7 @@
 function soundWaveFilter(soundWave, lowerLimit, upperLimit){
+  if (soundWave === []){
+    throw new Error("No soundWave provided");
+  }
   let result = []
     soundWave.forEach(frequency => {
       if(frequency < lowerLimit){
