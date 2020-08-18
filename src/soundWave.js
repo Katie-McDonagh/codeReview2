@@ -1,4 +1,4 @@
-function soundWaveFilter(soundWave, lowerLimit, upperLimit){
+function soundWaveFilter(soundWave, lowerLimit, upperLimit = 1000){
   if (soundWave === []){
     throw new Error("No soundWave provided");
   }

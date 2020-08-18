@@ -41,7 +41,7 @@ describe ("soundWaveFilter", function (){
 });
 
   it("should provide a default upperLimit of 10000 if none is provided", function (){
-    expect(soundWaveFilter([20000], 30)).toEqual([10000])
+    expect(soundWaveFilter([2000], 30)).toEqual([1000])
   })
 
   });
