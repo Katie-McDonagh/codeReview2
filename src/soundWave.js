@@ -5,7 +5,7 @@ function soundWaveFilter(soundWave, lowerLimit, upperLimit){
        frequency = lowerLimit
       result.push(frequency)
     }
-    else if(soundWave > upperLimit){
+    else if(frequency > upperLimit){
       result.push(upperLimit)
      } 
      else{
