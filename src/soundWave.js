@@ -1,7 +1,8 @@
 function soundWaveFilter(soundWave, lowerLimit, upperLimit){
   let result = []
   if(soundWave < lowerLimit){
-    soundWave.forEach(element => {
+    soundWave.forEach(frequency => {
+      frequency = lowerLimit
       result.push(lowerLimit)
     });
     result.push(lowerLimit)
